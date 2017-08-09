@@ -1,0 +1,34 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.maingame{
+  margin: 0px auto;
+  width: 430px;
+}
+table#myTable {
+  width: 330px;
+}
+table#myTable tr td{
+  padding: 35px;
+  border: 1px solid gray;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.sidenav {
+  background-color: #f1f1f1;
+  height: 460px;
+}
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+}
+.pad0{
+  padding: 0px;
+}
+.container .color-primary{
+  background-color: #00bcd4;
+}
