@@ -56,8 +56,8 @@ document.addEventListener("keydown", function(event) {
   var x = document.getElementById("myTable").rows;
   if(event.which == 38){
     if(index_x == 0){
-      document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Up will not work";
-      $("#myModal1").modal();
+      // document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Up will not work";
+      // $("#myModal1").modal();
     }else {
       x[index_x - 1].cells[index_y].innerText = parseInt(x[index_x - 1].cells[index_y].innerText) + 1;
       x[index_x].cells[index_y].style.border = "";
@@ -67,8 +67,8 @@ document.addEventListener("keydown", function(event) {
     //console.log("Key Up");
   }else if (event.which == 37){
     if(index_y == 0){
-      document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Left will not work";
-      $("#myModal1").modal();
+      // document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Left will not work";
+      // $("#myModal1").modal();
     }else {
       x[index_x].cells[index_y - 1].innerText = parseInt(x[index_x].cells[index_y - 1].innerText) + 1;
       x[index_x].cells[index_y].style.border = "";
@@ -78,8 +78,8 @@ document.addEventListener("keydown", function(event) {
     //console.log("key left");
   }else if (event.which == 39) {
     if(index_y == 2){
-      document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Right will not work";
-      $("#myModal1").modal();
+      // document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key Right will not work";
+      // $("#myModal1").modal();
     }else {
       x[index_x].cells[index_y + 1].innerText = parseInt(x[index_x].cells[index_y + 1].innerText) + 1;
       x[index_x].cells[index_y].style.border = "";
@@ -89,8 +89,8 @@ document.addEventListener("keydown", function(event) {
     //console.log("key Right");
   }else if (event.which == 40) {
     if(index_x == 2){
-      document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key down will not work";
-      $("#myModal1").modal();
+      // document.getElementById("myModal1").querySelectorAll(".modal-body")[0].innerText = "Key down will not work";
+      // $("#myModal1").modal();
     }else {
       x[index_x + 1].cells[index_y].innerText = parseInt(x[index_x + 1].cells[index_y].innerText) + 1;
       x[index_x].cells[index_y].style.border = "";
