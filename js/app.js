@@ -1,13 +1,37 @@
 var index_x = 0;
 var index_y = 0;
+var playerWon = false;
+document.getElementById("wonornot").style.display = "none";
 document.getElementById("myTable").rows[0].cells[0].style.border = "2px solid red";
 function myFunction() {
     index_x = 0;
     index_y = 0;
+    playerWon = false;
+    document.getElementById("wonornot").style.display = "none";
     var x = document.getElementById("myTable").rows;
     for (var i = 0; i < x.length; i++) {
       for (var j = 0; j < x[i].cells.length; j++) {
           x[i].cells[j].innerText = Math.floor(Math.random() * 2);
+          x[i].cells[j].style.border = "";
+      }
+    }
+    x[0].cells[0].innerText = 1;
+    x[0].cells[0].style.border = "2px solid red";
+}
+function myReset(){
+    index_x = 0;
+    index_y = 0;
+    playerWon = false;
+    var items = [
+        [1, 0, 0],
+        [1, 1, 0],
+        [1, 1, 0]
+      ];
+    document.getElementById("wonornot").style.display = "none";
+    var x = document.getElementById("myTable").rows;
+    for (var i = 0; i < x.length; i++) {
+      for (var j = 0; j < x[i].cells.length; j++) {
+          x[i].cells[j].innerText = items[i][j];
           x[i].cells[j].style.border = "";
       }
     }
@@ -27,6 +51,8 @@ function iswon() {
   return true;
 }
 document.addEventListener("keydown", function(event) {
+  if(playerWon == true)
+    return;
   var x = document.getElementById("myTable").rows;
   if(event.which == 38){
     if(index_x == 0){
@@ -74,7 +100,9 @@ document.addEventListener("keydown", function(event) {
     //console.log("keydown");
   }
   if(iswon() == true){
+    playerWon = true;
     $("#myModal2").modal();
     document.getElementById("myModal2").querySelectorAll(".modal-body")[0].innerText = "Congratulations You Won the Game!! Are you want to play again ?";
+    document.getElementById("wonornot").style.display = "block";
   }
 })

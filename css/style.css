@@ -32,3 +32,7 @@ table#myTable tr td{
 .container .color-primary{
   background-color: #00bcd4;
 }
+.won-class{
+  color: #4555ca;
+  font-weight: bold;
+}

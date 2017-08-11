@@ -20,14 +20,14 @@
             <div class="panel-body">
               <ul class="list-group text-justify">
                 <li class="list-group-item">It's is a 3x3 Matrix form game.</li>
-                <li class="list-group-item">You can use keyboard left, Right, Bottom, Top keys to play game.</li>
+                <li class="list-group-item">You can use keyboard Left, Right, Bottom, Top keys to play game.</li>
                 <li class="list-group-item">Once all the cells will have the same number. Then,</li>
                 <li class="list-group-item">Congrats!! You won the game.</li>
               </ul>
             </div>
             <div class="panel-footer text-center">
               <button type="button" class="btn btn-primary" onclick="myFunction()">Start Random</button>
-              <button type="button" class="btn btn-danger" onclick="myFunction()">Reset</button>
+              <button type="button" class="btn btn-danger" onclick="myReset()">Reset</button>
             </div>
           </div>
         </div>
@@ -51,6 +51,7 @@
                 <td>0</td>
               </tr>
             </table>
+            <h4 class="text-center won-class" id="wonornot">Congratulations You Won the Game.</h4>
         </div>
       </div>
       <div class="panel-footer text-center">&#169; 2017-18 kvgupta24@gmail.com. All rights reserved.</div>
@@ -68,7 +69,7 @@
           <p>Some text.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
