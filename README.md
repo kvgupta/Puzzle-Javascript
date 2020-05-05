@@ -8,3 +8,5 @@ Puzzle Game built in JavaScript Events
 ## Once all the cells will have the same number. Then,
 
 ## Congrats!! You won the game.
+
+![Image description](https://i.imgur.com/5p2gipx.png)
