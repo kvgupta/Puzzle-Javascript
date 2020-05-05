@@ -1,10 +1,12 @@
 # Puzzle-Javascript
 Puzzle Game built in JavaScript Events
 
-## It's is a 3x3 Matrix form game.
+![Image description](https://i.imgur.com/5p2gipx.png)
 
-## You can use keyboard left, Right, Bottom, Top keys to play game.
+### It's is a 3x3 Matrix form game.
 
-## Once all the cells will have the same number. Then,
+### You can use keyboard left, Right, Bottom, Top keys to play game.
 
-## Congrats!! You won the game.
+### Once all the cells will have the same number. Then,
+
+### Congrats!! You won the game.
